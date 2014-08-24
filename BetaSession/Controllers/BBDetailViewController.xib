@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BBDetailViewController">
+            <connections>
+                <outlet property="albumButton" destination="bc2-tb-qFc" id="3Mm-m8-nIc"/>
+                <outlet property="cameraButton" destination="jwJ-r5-V1e" id="iNk-jo-zuI"/>
+                <outlet property="exerciseName" destination="eyT-uJ-dYd" id="aFr-wq-r73"/>
+                <outlet property="exerciseType" destination="ftJ-zA-KrQ" id="xW9-rc-69O"/>
+                <outlet property="imageLabel" destination="lxN-fq-Ng0" id="5oU-OA-9Nj"/>
+                <outlet property="imageView" destination="gQ1-98-Lsi" id="lz6-fk-X88"/>
+                <outlet property="playButton" destination="4co-qX-n5T" id="1Ja-Hw-TUl"/>
+                <outlet property="toolbar" destination="bc2-tb-qFc" id="9Tp-ET-oNg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIControl">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YtM-CV-au5">
+                    <rect key="frame" x="20" y="90" width="46" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="0Tv-Fh-7CP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Style" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJm-BN-wlo">
+                    <rect key="frame" x="20" y="134" width="39" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="oBa-aj-8k0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eyT-uJ-dYd">
+                    <rect key="frame" x="79" y="86" width="221" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="GDI-Fl-2fj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftJ-zA-KrQ">
+                    <rect key="frame" x="79" y="130" width="221" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ZBv-s3-g05"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exercise Video" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxN-fq-Ng0">
+                    <rect key="frame" x="104" y="198" width="113" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gQ1-98-Lsi">
+                    <rect key="frame" x="40" y="227" width="240" height="240"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc2-tb-qFc">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="t5n-hF-F9T"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem systemItem="camera" id="jwJ-r5-V1e">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="takePicture:" destination="-1" id="v7N-LJ-F0G"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="F27-5I-0XH"/>
+                        <barButtonItem title="Album" id="Asi-Rv-tll">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="chooseFromPhotoAlbum:" destination="-1" id="d9G-jy-fh6"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <imageView userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="play-4-128.png" translatesAutoresizingMaskIntoConstraints="NO" id="g0W-ZE-WSO">
+                    <rect key="frame" x="95" y="282" width="130" height="130"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view alpha="0.099999999999999686" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4co-qX-n5T" customClass="UIButton">
+                    <rect key="frame" x="40" y="227" width="240" height="240"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="playVideo:" destination="-1" eventType="touchUpInside" id="1mz-bK-QUo"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ftJ-zA-KrQ" firstAttribute="top" secondItem="eyT-uJ-dYd" secondAttribute="bottom" constant="14" id="2LB-hT-wny"/>
+                <constraint firstAttribute="trailing" secondItem="eyT-uJ-dYd" secondAttribute="trailing" constant="20" id="EtV-tu-6lL"/>
+                <constraint firstItem="vJm-BN-wlo" firstAttribute="top" secondItem="YtM-CV-au5" secondAttribute="bottom" constant="23" id="I6h-Wa-9pV"/>
+                <constraint firstItem="vJm-BN-wlo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="I8i-Qk-JkU"/>
+                <constraint firstAttribute="trailing" secondItem="bc2-tb-qFc" secondAttribute="trailing" id="PhQ-RX-k5d"/>
+                <constraint firstItem="bc2-tb-qFc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PsV-Sk-JJR"/>
+                <constraint firstItem="YtM-CV-au5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="UUG-hi-hhR"/>
+                <constraint firstItem="eyT-uJ-dYd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="86" id="UqT-vJ-5pR"/>
+                <constraint firstAttribute="trailing" secondItem="ftJ-zA-KrQ" secondAttribute="trailing" constant="20" id="WYa-fe-Kd7"/>
+                <constraint firstAttribute="bottom" secondItem="bc2-tb-qFc" secondAttribute="bottom" id="YAS-ED-K3Y"/>
+                <constraint firstItem="YtM-CV-au5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="b94-tx-N1q"/>
+                <constraint firstItem="eyT-uJ-dYd" firstAttribute="leading" secondItem="YtM-CV-au5" secondAttribute="trailing" constant="13" id="h1e-ar-dSh"/>
+                <constraint firstItem="ftJ-zA-KrQ" firstAttribute="leading" secondItem="vJm-BN-wlo" secondAttribute="trailing" constant="20" id="thc-FU-LH4"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <action selector="backgroundTapped:" destination="-1" eventType="touchUpInside" id="bP8-nu-aNL"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="play-4-128.png" width="128" height="128"/>
+    </resources>
+</document>
